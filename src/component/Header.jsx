@@ -50,7 +50,7 @@ function Header() {
             <section className='maintop bg-body-tertiary'>
                 <nav className="navbar navbar-expand-lg ">
                     <div className="container">
-                        <a href=""><img className='w-100' src={'./image/logo-1.png'} alt="" /></a>
+                        <a href="#"><img className='w-100' src={'./image/logo-1.png'} alt="" /></a>
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon" />
                         </button>

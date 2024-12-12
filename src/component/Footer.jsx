@@ -30,7 +30,7 @@ function Footer() {
                         <h3 >Recent post</h3>
                         <div className="row">
                             {footerpost.map((a)=>(
-                                <div className="row footerbox">
+                                <div key={a.id} className="row footerbox">
                                     <div className="col-lg-4 mt-4">
                                         <img className='w-100' src={a.image} alt="" />
                                     </div>
@@ -46,7 +46,7 @@ function Footer() {
                         <h4>Useful links  </h4>
                         <div className="row">
                         {links.map((a)=>(
-                                <div className="col-lg-12 mt-3">
+                                <div key={a.id} className="col-lg-12 mt-3">
                                     <a href="#" className='footerlink'>{a}</a>
                                 </div>
                             ))}

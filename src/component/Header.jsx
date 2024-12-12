@@ -9,6 +9,8 @@ import Sports from '../pages/Sports';
 import Culture from '../pages/Culture';
 import Video from '../pages/Video';
 import News from '../pages/News';
+import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/clerk-react";
+
 
 function Header() {
     useEffect(() => {
@@ -42,7 +44,12 @@ function Header() {
                                 <option value="nepali">Nepali</option>
                             </select>
 
-                            <Link to='/login' className='btn'><i className="bi bi-person" /> Login</Link>
+                            <SignedOut>
+        <SignInButton />
+      </SignedOut>
+      <SignedIn>
+        <UserButton />
+      </SignedIn>
                         </div>
                     </div>
                 </div>
